@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Practice Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <header class="header">
+        <!-- The header has two sections: a photo on the left (1/3) and a navigation section on the right (2/3) -->
         <div class="header-photo">
             <img src="assets/images/Sascha.jpg" alt="Dr Sascha R Klement">
         </div>
@@ -24,5 +26,54 @@
             </nav>
         </div>
     </header>
+
+    <main class="main-container">
+     <!-- Left column: personal info (fixed/sticky sidebar)  -->
+        <div class="sidebar" id="personal-info">
+            <h2>Personal Info</h2>
+            <p>Name: Dr Sascha R Klement</p>
+            <p>Address: Heimstaettenstr. 3, 64354 Reinheim, Germany</p>
+            <p>Mobile: 0049151 - 56375979</p>
+            <p><a href="mailto:sascha.r.klement@gmail.com">sascha.r.klement@gmail.com</a></p>
+        </div>
+
+        <div class="main-content">
+            <!-- Right column: main sections (mobile/moving) -->
+        
+            <section id="home">
+                <h2>About Me:</h2>
+                <h3>What do I do?</h3>
+                <p>I create educational content both online and offline.</p>
+
+                <h3>Why hire me?</h3>
+                <p>I am internationally experienced educator, who has taught at both schools and universities.</p>
+
+                <h3>How do I do it?</h3>
+                <p>I cooperate closely with my clients to understand their preferences, needs and goals.</p>
+            </section>
+
+            <section id="education">
+                <h2>My academic credentials:</h2>
+                <p>Bachelor of Arts (BA) in English and Comparative Literature</p>
+                <p>Master of Arts (MA) in English and American Literature</p>
+                <p>Doctor of Philosophy (PhD) in Cultural History</p>
+                <p>Certified for IB (International Baccalaureate) and AP (Advanced Placement)</p>
+            </section>
+
+            <section id="contact">
+                <h2>How to get in touch:</h2>
+                <p>Snail mail: Heimstaettenstr. 3, 64354 Reinheim, Germany</p>
+                <p>Mobile: 0049151 - 56375979</p>
+                <p><a href="mailto:sascha.r.klement@gmail.com">sascha.r.klement@gmail.com</a></p>
+            </section>
+
+            <section id="downloadcv">
+                <h2>Download my academic CV:</h2>
+                <a href="assets/files/CV_Frame_March_2025.pdf" download="">Download PDF</a>
+            </section>
+
+        </div>
+    </main>
+
 </body>
 </html>

@@ -1,3 +1,7 @@
+body {
+  font-family: 'EB Garamond', Garamond, serif;  
+}
+
 .header {
     display: flex;
     align-items: stretch; 
@@ -44,9 +48,8 @@
 
 .header-info nav a {
     text-decoration: none;
-    color: #333;
     font-weight: bold;
-    
+    color: #333;
 }
 
 .header-photo {
@@ -55,4 +58,31 @@
 
 .header-info {
     border: 2px solid blue;
+}
+
+.main-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    max-width: 33%;
+    position: sticky;
+    top: 20px;
+    background-color: yellowgreen;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.main-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
