@@ -8,6 +8,7 @@ body {
     padding: 20px;
     gap: 10px;
     max-height: 250px;
+    
 }
 
 .header-photo {
@@ -29,6 +30,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    background-color: #c4e2e1;
 }
 
 .header-info h1 {
@@ -49,22 +51,22 @@ body {
 .header-info nav a {
     text-decoration: none;
     font-weight: bold;
-    color: #333;
+    color: black;
 }
 
 .header-photo {
-    border: 2px solid red;
+    border: 4px solid midnightblue;
 }
 
 .header-info {
-    border: 2px solid blue;
+    border: 4px solid midnightblue;
 }
 
 .main-container {
     display: flex;
     gap: 20px;
     padding: 20px;
-    height: 300px;
+    height: 325px;
 }
 
 .sidebar {
@@ -72,7 +74,7 @@ body {
     max-width: 33%;
     position: sticky;
     top: 20px;
-    background-color: yellowgreen;
+    background-color: #c4e2c9;
     padding: 15px;
     border-radius: 10px;
 }
@@ -84,24 +86,43 @@ body {
     gap: 40px;
 }
 
+#home {
+    background-color: #e2e2c4;
+}
+
+#education {
+    background-color: #d0e2c4;
+}
+
+#contact {
+    background-color: #c4e2cb;
+}
+
+#downloadcv {
+    background-color: #c4e2dc;
+    height: 150px;
+}
+
 .footer {
     display: flex;
     align-items: center;
     padding: 20px;
     gap: 10px;
-    border: 5px solid black;
+    border: 5px solid teal;
     max-height: 80px;
+    background-color: #5b8c66;
 }
 
 .footer-left {
     flex: 1;
     max-width: 33%;
+    color: white;
 }
 
 .footer-info {
     flex: 2;
     font-size: 0.9rem;
-    color: #666;
+    color: white;
     padding-left: 15px;
     text-align: center;
 }
