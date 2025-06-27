@@ -85,5 +85,45 @@
     </div>
 </footer>
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll("nav a");
+  const sections = document.querySelectorAll(".main-content section");
+
+  // Hide all sections initially except #home
+  sections.forEach(section => {
+    section.style.opacity = "0";
+    section.style.display = "none";
+  });
+
+  const showSection = (id) => {
+    sections.forEach(section => {
+      if (section.id === id) {
+        section.style.display = "block";
+        setTimeout(() => {
+          section.style.opacity = "1";
+        }, 50);
+      } else {
+        section.style.opacity = "0";
+        setTimeout(() => {
+          section.style.display = "none";
+        }, 300);
+      }
+    });
+  };
+
+  showSection("home");
+
+  links.forEach(link => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const targetId = link.getAttribute("href").substring(1);
+      showSection(targetId);
+    });
+  });
+});
+</script>
+
+
 </body>
 </html>
